@@ -1,5 +1,5 @@
-# Alpine-SSH
-Alpine Linux docker image with SSH support.
+# Debian-SSH
+Debian Linux docker image with SSH support.
 
 ## Features
  - Allows **ONLY** key-based authentication
