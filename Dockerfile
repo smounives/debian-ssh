@@ -1,10 +1,10 @@
-FROM alpine:latest
+FROM debian:latest
 MAINTAINER polandj
 
 
-RUN apk update && apk add openssh 
+RUN apt-get update && apt-get -y install openssh-server
 
-RUN echo "Welcome to Alpine! <http://wiki.alpinelinux.org>" > /etc/motd
+RUN echo "Welcome to Debian!" > /etc/motd
 
 RUN echo "PubkeyAcceptedKeyTypes=+ssh-dss" > /etc/ssh/ssh_config
 
